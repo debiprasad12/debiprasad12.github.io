@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Resposnive menu</title>
+	<link rel="stylesheet" type="text/css" href="https://sctevt.odisha.gov.in/public/assets/sctevthome/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://192.168.1.198/sctevt/public/assets/sctevthome/css/font-awesome.min.css">
+	<style type="text/css">
+		.menu-div{
+			background: #333;
+		}
+		.mega-box-menu{
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+		.mega-box-menu li{
+			flex-grow: 1;
+			list-style: none;
+			transition: .3s ease;
+		}
+		.mega-box-menu li:hover{
+			background: #7c99c2;
+		}
+		.mega-box-menu li a{
+			display: block;
+			padding: 10px;
+			color: #fff;
+			text-decoration: none;
+			height: 100%;
+		}
+		.mega-box-menu li:last-child a{
+			border-right: 0;
+		}
+		.mega-box-menu li ul{
+			display: flex;
+			width: 100%;
+			background: #fff;
+			margin: 0;
+			padding: 0;
+			z-index: 1;
+			display: none;
+		}
+		.mega-box-menu li ul li{
+			border: solid 2px rgb(0 0 0 / 10%);
+		}
+		.mega-box-menu li ul li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #333;
+			font-weight: 600;
+			padding: 5px 10px;
+			position: relative;
+			transition: .3s ease;
+			border-right: 0;
+		}
+		.mega-box-menu li ul li a:hover{
+			color: #fff;
+		}
+		.mobile-mega-menu-link{
+		    color: #fff;
+		    border: solid 1px rgb(255 255 255 / 20%);
+		    padding: 2px 14px;
+		    font-size: 15px;
+		    margin: 5px 0;
+		    text-decoration: none;
+		    border-radius: 3px;
+		}
+		.mobile-mega-menu-link:hover{
+			color: #fff;
+		}
+		@media (max-width: 768px){
+			.mobile-mega-menu-link{
+				display: inline-block;
+			}
+			.mega-box-menu{
+				flex-direction: column;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				background: #333;
+				display: none;
+			}
+			.mega-box-menu li{
+				position: relative;
+			}
+			.mega-box-menu li a{
+				font-size: 12px;
+				text-align: left;
+				border-bottom: solid 1px rgb(255 255 255 / 15%);
+			}
+			.mega-box-menu li ul{
+				flex-direction: column;
+			}
+			.mega-box-menu li ul li{
+				min-height: auto;
+			}
+			.mega-box-menu li ul li a{
+				display: flex;
+				align-items: flex-start;
+				justify-content: initial;
+			}
+		}
+		@media (min-width: 768px){
+			.mobile-mega-menu-link{
+				display: none;
+			}
+			.mega-box-menu{
+				flex-direction: row;
+				background: transparent;
+				display: flex !important;
+			}
+			.mega-box-menu li{
+				position: initial;
+			}
+			.mega-box-menu li a{
+				font-size: 12px;
+				text-align: center;
+				border-right: solid 1px rgb(255 255 255 / 15%);
+			}
+			.mega-box-menu li ul{
+				flex-direction: row;
+				position: absolute;
+				left: 0;
+				top: 100%;
+			}
+			.mega-box-menu li ul li{
+				min-height: 50px;
+			}
+			.mega-box-menu li ul li a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		@media (min-width: 998px){
+			.mega-box-menu li a{
+				font-size: 14px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="menu-div">
+		<div class="container" style="position: relative;">
+			<a href="javascript:;" class="mobile-mega-menu-link"><i class="fa fa-bars"></i> MENU</a>
+			<ul class="mega-box-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Council</a></li>
+				<li>
+					<a href="#">Administration</a>
+					<ul>
+						<li><a href="#">Committe</a></li>
+						<li><a href="#">E-Governance</a></li>
+						<li><a href="#">Rules & Regulations</a></li>
+						<li><a href="#">Organisation Overview</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Notification</a>
+					<ul>
+						<li>
+							<a href="#">Diploma</a>
+							<ul>
+								<li><a href="#">Notice Board</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ITI</a>
+							<ul>
+								<li><a href="#">Notice Board</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Student Corner</a>
+					<ul>
+						<li>
+							<a href="#">Diploma</a>
+							<ul>
+								<li><a href="#">Syllabus</a></li>
+								<li><a href="#">E-learning Notes</a></li>
+								<li><a href="#">Student Feedback</a></li>
+								<li><a href="#">Online Service</a></li>
+								<li><a href="#">Rules & Regulation</a></li>
+								<li><a href="#">Exam Results</a></li>
+								<li><a href="#">Exam Information</a></li>
+								<li>
+									<a href="#">Admission</a>
+									<ul>
+										<li><a href="#">Diploma Government</a></li>
+										<li><a href="#">Diploma Private</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ITI</a>
+							<ul>
+								<li><a href="#">Exam Results</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Institution</a>
+					<ul>
+						<li>
+							<a href="#">Diploma</a>
+							<ul>
+								<li><a href="#">Know Your Institutaion</a></li>
+								<li><a href="#">Affiliation/Renewal</a></li>
+								<li><a href="#">Ranking Of Diploma Institution</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ITI</a>
+							<ul>
+								<li><a href="#">Know Your Institutaion</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">RTI</a></li>
+				<li><a href="#">Tender</a></li>
+				<li>
+					<a href="#">Achievements</a>
+					<ul>
+						<li><a href="#">Govt Polytechnics with NBA Accredited Branches</a></li>
+						<li><a href="#">Special initiative</a></li>
+						<li><a href="#">Prominent Activities and Achievements</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+					<ul>
+						<li><a href="#">Grievance</a></li>
+						<li><a href="#">Office Address</a></li>
+						<li><a href="#">Feedback</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$( ".mega-box-menu li" ).hover(
+		  function() {
+		    $(this).find("ul:eq(0)").css({'display':'flex'});
+		  }, function() {
+		    $(this).find("ul").hide();
+		  }
+		);
+		$(document).ready(function(){
+		  	$(".mobile-mega-menu-link").click(function(){
+		    	$(".mega-box-menu").slideToggle();
+		  	});
+		});
+	</script>
+</body>
+</html>
