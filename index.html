@@ -42,9 +42,11 @@
 			padding: 0;
 			z-index: 1;
 			display: none;
+			border: solid 1px rgb(0 0 0 / 10%);
 		}
-		.mega-box-menu li ul li{
-			border: solid 2px rgb(0 0 0 / 10%);
+		.mega-box-menu li ul li:last-child{
+			border-right: 0;
+			border-bottom: 0;
 		}
 		.mega-box-menu li ul li a{
 			display: block;
@@ -97,6 +99,7 @@
 			}
 			.mega-box-menu li ul li{
 				min-height: auto;
+				border-bottom: solid 1px rgb(0 0 0 / 10%);
 			}
 			.mega-box-menu li ul li a{
 				display: flex;
@@ -129,6 +132,7 @@
 			}
 			.mega-box-menu li ul li{
 				min-height: 50px;
+				border-right: solid 1px rgb(0 0 0 / 10%);
 			}
 			.mega-box-menu li ul li a{
 				display: flex;
