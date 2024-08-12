@@ -4,12 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Medi Predict</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.html" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -97,7 +91,7 @@
                 </div> -->
             </div>
             <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Add Symptoms</a>
+            <a href="javascript:;" class="btn btn-primary py-2 px-4 ms-3" onclick="symptomsPop()">Add Symptoms</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -130,10 +124,8 @@
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-4 text-white mb-md-4 animated zoomIn">Predict Disease</h1>
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Introducing Medi Predict: Your Personalized Health Companion</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Predict Disease</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Extensive information</a>
-                            <a href="#" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Generic Medicines</a>
                         </div>
                     </div>
                 </div>
@@ -141,10 +133,8 @@
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-4 text-white mb-md-4 animated zoomIn">Medi Predict Help You to Forecast Your Disease</h1>
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Predict disease based on the input symptoms</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Medi Predict Help You to Forecast Your Disease</h1>
-                            <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Generic Medicines</a>
-                            <a href="#" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Locate Patient</a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +158,7 @@
     <div class="container-fluid banner mb-5">
         <div class="container">
             <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
                     <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
                         <h3 class="text-white mb-3">Opening Hours</h3>
                         <div class="d-flex justify-content-between text-white mb-3">
@@ -186,23 +176,7 @@
                         <a class="btn btn-light" href="#">Appointment</a>
                     </div>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-dark d-flex flex-column p-5" style="height: 300px;">
-                        <h3 class="text-white mb-3">Search A Hospital</h3>
-                        <div class="date mb-3" id="date" data-target-input="nearest">
-                            <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                placeholder="Appointment Date" data-target="#date" data-toggle="datetimepicker" style="height: 40px;">
-                        </div>
-                        <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                            <option selected>Predict Disease As A Service(PDaaS)</option>
-                            <option value="1">Service 1</option>
-                            <option value="2">Service 2</option>
-                            <option value="3">Service 3</option>
-                        </select>
-                        <a class="btn btn-light" href="#">Search Hospital</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.6s">
                     <div class="bg-secondary d-flex flex-column p-5" style="height: 300px;">
                         <h3 class="text-white mb-3">Connect Hospital FrontDesk</h3>
                         <p class="text-white">Aims to bridge the gap between patients and hospitals by leveraging AI technology to predict diseases based on symptoms, provide relevant information on diseases and remedies, and facilitate easy access to healthcare services.</p>
@@ -245,8 +219,8 @@
             <div class="row gx-5">
                 <div class="col-lg-6 py-5">
                     <div class="py-5">
-                        <h1 class="display-5 text-white mb-4">Introducing Medi Predict: Your Personalized Health Companion</h1>
-                        <p class="text-white mb-0">Medi Predict is an innovative AI-powered chatbot designed to transform the way you manage your health. By simply inputting your symptoms, Medi Predict can predict potential diseases and provide you with a percentage likelihood of each possible condition. This tool leverages advanced algorithms and a vast database of medical knowledge to offer you quick, accurate, and personalized health insights..</p>
+                        <h1 class="display-6 text-white mb-4">Introducing Medi Predict: Your Personalized Health Companion</h1>
+                        <p class="text-white text-justify mb-0">Medi Predict is an innovative AI-powered chatbot designed to transform the way you manage your health. By simply inputting your symptoms, Medi Predict can predict potential diseases and provide you with a percentage likelihood of each possible condition. This tool leverages advanced algorithms and a vast database of medical knowledge to offer you quick, accurate, and personalized health insights..</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -285,19 +259,13 @@
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 mb-5">
-                <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7">
+                <div class="col-lg-12">
                     <div class="section-title mb-5">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
                         <h1 class="display-5 mb-0">Predict disease based on the input symptoms for any of the registered patients or citizens</h1>
                     </div>
                     <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
                                 <img class="img-fluid" src="img/service-1.jpg" alt="">
                             </div>
@@ -305,7 +273,15 @@
                                 <h5 class="m-0">Predict Disease</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.9s">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">Disease Information</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4 service-item wow zoomIn" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
                                 <img class="img-fluid" src="img/service-2.jpg" alt="">
                             </div>
@@ -348,26 +324,6 @@
         </div>
     </div>
     <!-- Service End -->
-
-
-    <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="offer-text text-center rounded p-5">
-                        <h1 class="display-5 text-white">Medi Predict</h1>
-                        <p class="text-white mb-4">Aims to bridge the gap between patients and hospitals by leveraging AI technology to predict diseases based on symptoms, provide relevant information on diseases and remedies, and facilitate easy access to healthcare services
-.</p>
-                        <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Search Hospital</a>
-                        <a href="#" class="btn btn-light py-3 px-5">Write Symptoms</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
-
 
     <!-- Pricing Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -413,38 +369,38 @@
                         </div>
                         <div class="price-item pb-4">
                             <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                                <img class="img-fluid rounded-top" src="img/price-4.jpg" alt="">
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
                                 <h4>Locate Patient</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Clinical AI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Services</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
                             </div>
                         </div>
                         <div class="price-item pb-4">
                             <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                                <img class="img-fluid rounded-top" src="img/price-5.jpg" alt="">
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
                                 <h4>SoS Emergency</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Clinical AI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Services</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
                             </div>
                         </div>
                         <div class="price-item pb-4">
                             <div class="position-relative">
-                                <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                                <img class="img-fluid rounded-top" src="img/price-6.jpg" alt="">
                             </div>
                             <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
                                 <h4>Recommend Consultants (OPD)</h4>
                                 <hr class="text-primary w-50 mx-auto mt-0">
-                                <div class="d-flex justify-content-between mb-3"><span>Clinical AI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Professional Services</span><i class="fa fa-check text-primary pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-2"><span>24/7 Support</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i class="fa fa-check text-primary pt-1"></i></div>
                             </div>
                         </div>
                     </div>
@@ -509,7 +465,7 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; 2024 <a class="text-white border-bottom" href="javascript:;">Medi Predict.App</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; 2024 <a class="text-white border-bottom" href="javascript:;">Medi Predict</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p class="mb-0">Designed by <a class="text-white border-bottom" href="http://www.lipl.in" target="_blank">Luminous Infoways</a></p>
@@ -522,6 +478,47 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <div class="predict-modal-wraper" style="display: none;">
+        <div class="predict-modal">
+            <close onclick="symptomsPopClose()">&times;</close>
+            <div class="predict-modal-body">
+                <h1>Symptoms</h1>
+                <div id="searchbardiv" class="searchbardiv">
+                    <input id="searchbar" class="searchbar form-control" onkeyup="search_symptoms()" type="search" name="search" placeholder=" Search symptoms.. "> <br>
+                </div>
+
+                <div class="container symptoms-list" id="container-dropdown">
+                    {% for i in list2 %}
+                    
+                    <a class="dropdown-item" onclick="Functionsymptoms(this.textContent)">{{i}}</a>
+                    
+                    {% endfor %}
+                </div>
+                <div class="selected-symptoms"></div>
+                <div class="text-right pt-20">
+                    <span class="text-primary">Select minimum 3 symptoms to proceed</span>
+                    <button id="predict" class="btn btn-primary" disabled>Proceed</button>
+                </div>
+            </div>
+            <div class="predict-result">
+                <div class="result-content">
+                    <h1>Result</h1>
+                    <div>Patient name : <span>Priyabrata</span></div>
+                    <div>Age : <span>25</span></div>
+                    <div><b>30%</b> chance of <b>Urinary tract infection</b></div>
+                    <br />
+                    <br />
+                    <div class="text-center" style="padding: 10px 0;">
+                        <a href="#" class="btn btn-primary">Know more about Urinary tract infection</a>
+                        <br />
+                        <br />
+                        <a href="#" class="btn btn-primary">Consult a Urologist doctor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- JavaScript Libraries -->
@@ -537,5 +534,6 @@
     <script src="lib/twentytwenty/jquery.event.move.js"></script>
     <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/medi-predict.js"></script>
 </body>
 </html>
